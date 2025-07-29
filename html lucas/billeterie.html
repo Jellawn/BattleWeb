@@ -4,39 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Bass'in Flow Festival</title>
 
 </head>
 
-<body>
-    <!-- BOOTSTRAP HEADER -->
-    <header class="position-fixed top-0 start-0 w-100 z-3 py-3 px-3 px-sm-4 px-lg-5 bg-transparent">
-        <div class="d-flex justify-content-between align-items-center">
+<body class="bg-light p-5">
 
-            <!-- Menu hamburger -->
-            <a href="#" class="position-relative d-block pointer-events-auto" style="width: 3.5rem; height: 3.5rem;">
-                <div class="position-absolute top-50 start-50 translate-middle bg-purple rounded-circle"
-                    style="width: 100%; height: 100%; z-index: 1;"></div>
-                <div class="position-absolute top-50 start-50 translate-middle bg-light rounded-circle"
-                    style="width: 100%; height: 100%; z-index: 2;"></div>
-                <div class="position-absolute start-50 top-50 translate-middle" style="margin-left: 28%; z-index: 3;">
-                    <div class="bg-purple" style="height: 3px; width: 28px; margin-bottom: 6px;"></div>
-                    <div class="bg-purple" style="height: 3px; width: 28px; margin-bottom: 6px;"></div>
-                    <div class="bg-purple" style="height: 3px; width: 28px;"></div>
+    <div class="container text-center">
+        <h1 class="mb-4">Achetez vos places pour le Festival</h1>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Pass 1 Jour -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Pass 1 Jour</h5>
+                        <p class="card-text">Accès à toutes les scènes pendant une journée.</p>
+                        <p class="fw-bold">20 €</p>
+
+                        <!-- Compteur -->
+                        <div class="mb-3">
+                            <label for="qty1" class="form-label">Nombre de places :</label>
+                            <input type="number" id="qty1" class="form-control" value="1" min="1" max="10">
+                        </div>
+
+                        <a href="#" class="btn">Acheter</a>
+                    </div>
                 </div>
-            </a>
+            </div>
 
-            <!-- Bouton Billetterie -->
-            <a href="/billetterie"
-                class="btn btn-light d-flex align-items-center gap-2 pointer-events-auto position-relative">
-                <img src="/wp-content/uploads/2024/12/Ticket-1.svg"
-                    class="d-none d-sm-block position-absolute top-50 start-50 translate-middle"
-                    style="max-width: 1.75rem; max-height: 1.5rem; z-index: 0;">
-                <span class="d-none d-sm-inline">BILLETTERIE&nbsp;&nbsp;</span>
-            </a>
+            <!-- Pass Week-end -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Pass Week-end</h5>
+                        <p class="card-text">Profitez de tout le week-end avec ce pass complet.</p>
+                        <p class="fw-bold">50 €</p>
 
+                        <!-- Compteur -->
+                        <div class="mb-3">
+                            <label for="qty2" class="form-label">Nombre de places :</label>
+                            <input type="number" id="qty2" class="form-control" value="1" min="1" max="10">
+                        </div>
+
+                        <a href="#" class="btn">Acheter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pass VIP -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Pass VIP</h5>
+                        <p class="card-text">Accès VIP, boissons offertes et places réservées.</p>
+                        <p class="fw-bold">120 €</p>
+
+                        <!-- Compteur -->
+                        <div class="mb-3">
+                            <label for="qty3" class="form-label">Nombre de places :</label>
+                            <input type="number" id="qty3" class="form-control" value="1" min="1" max="10">
+                        </div>
+
+                        <a href="#" class="btn">Acheter</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
+
 </body>
 
 </html>
