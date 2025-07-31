@@ -2,13 +2,153 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bass'in Flow Festival</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nous Contacter</title>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Ton propre style -->
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/Bass'in_flow_festival_style.css">
 </head>
 
-<body>
-    <header></header>
+<body class="d-flex flex-column min-vh-100">
+
+
+
+  <!-- WRAPPER AVEC LE FOND BLEU -->
+  <div class="page-wrapper flex-grow-1 d-flex flex-column">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar p-3">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand " href="../html lucas/festivalrap.html">
+          <img src="../img_site/logo_sans_fond.webp" alt="logo" class="img-fluid" style="max-height: 130px;">
+        </a>
+
+        <!-- Burger menu -->
+        <button class="navbar-toggler btn btn-warning" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- BG menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">Accueil</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">Aperçu des artistes</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">Billetterie</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">À propos du festival</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">Merch</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">Artistes</a></li>
+            <li class="nav-item ms-auto"><a class="nav-link" href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact-section text-center py-5 flex-grow-1">
+      <div class="container">
+        <h1 class="contact-title mb-4">
+          <img src="../img_site/titrenous contacter.webp" alt="Nous contacter" class="img-fluid contact-title-img" />
+        </h1>
+
+        <div class="contact-box p-4">
+          <div class="row">
+            <!-- Infos à gauche -->
+            <div class="col-md-2 text-black d-flex align-items-center justify-content-center">
+            </div>
+
+            <!-- Formulaire -->
+            <div class="col-md-8">
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Nom / Prénom" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning fw-bold">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- Fin de page-wrapper -->
+
+  <footer class="footer text-center text-black py-4" style="background: #3c6273;">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col">
+          <div class="mx-auto d-flex  justify-content-center gap-4">
+            <a href="https://www.instagram.com/arcachongrandsconcerts/" target="_blank" class="text-black fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/16jXQFwCr8/?mibextid=wwXIfr" target="_blank"
+              class="text-black fs-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/search?q=arcachon%20destival&t=1753904181476" target="_blank"
+              class="text-black fs-4">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="text-black fs-4">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row small  mb-1">
+        <div class="col">Contact : 09 02 13 16 98 • bassinflow.festival@gmail.com</div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center gap-4">
+          <button class="btn  btn-sm">
+            <img src="../img_site/Picto_noir_footer/logos-pictos noirs footer/Arcachon noir_bleu picto.webp"
+              alt="Logo mairie" style="max-height: 70px; max-width: 120px;">
+          </button>
+          <button class="btn  btn-sm">
+            <img src="../img_site/Picto_noir_footer/logos-pictos noirs footer/PVML en noir.webp" alt="Logo mairie"
+              style="max-height: 70px; max-width: 120px;">
+          </button>
+          <button class="btn  btn-sm">
+            <img src="../img_site/Picto_noir_footer/logos-pictos noirs footer/nouvelle aquitaine noir.webp"
+              alt="Logo Nouvelle-Aquitaine" style="max-height: 70px;">
+          </button>
+          <button class="btn  btn-sm">Mentions légales</button>
+          <button class="btn btn-sm">CGV</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script pour fermer le menu au clic -->
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
+            || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

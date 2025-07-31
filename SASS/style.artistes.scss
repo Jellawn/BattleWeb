@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url(/font/font/Permanent_Marker/PermanentMarker-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.artistes-section p {
+  font-family: 'Permanent Marker', cursive;
+  color: #3c6273;
+  margin: 0;
+}
+
+.position-relative img.img-fluid {
+  max-height: 500px;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  height: auto;
+}
+
+/* Fond translucide sous les noms pour lisibilité */
+.noms-artistes-bg {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+/* Responsive font size */
+.noms-artistes p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .noms-artistes p {
+    font-size: 1.8rem;
+  }
+}
