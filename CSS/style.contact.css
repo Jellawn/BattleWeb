@@ -1,0 +1,60 @@
+/* BEGENNING OF "contact" PAGE*/
+@font-face {
+  font-family: "Acme";
+  src: url(/font/Acme/Acme-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Acme", sans-serif;
+  background-image: url(../img_site/Fond_page_principal.jfif);
+}
+.contact-section .contact-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 0 #000;
+}
+.contact-section .contact-box {
+  clip-path: polygon(
+    5% 10%,
+    15% 0%,
+    30% 5%,
+    50% 0%,
+    70% 5%,
+    85% 0%,
+    95% 10%,
+    100% 30%,
+    95% 50%,
+    100% 70%,
+    95% 90%,
+    85% 100%,
+    70% 95%,
+    50% 100%,
+    30% 95%,
+    15% 100%,
+    5% 90%,
+    0 70%,
+    5% 50%,
+    0 30%
+  );
+}
+.contact-section .send-btn {
+  background-color: #ffcc00;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.contact-section .send-btn:hover {
+  background-color: rgb(204, 163.2, 0);
+}
+
+button {
+  border-radius: 0;
+}
+
+.menu-btn {
+  border-radius: 0;
+  border: 2px solid #000;
+}
+
+/* END OF "contact" PAGE*/

@@ -22,7 +22,8 @@
 }
 /* CSS base */
 body {
-  background-color: #4a768b;
+  background-image: url(../img_site/Fond_page_principal.jfif);
+  background-size: cover;
   color: white;
   font-family: "Acme", sans-serif;
 }
@@ -99,16 +100,6 @@ body {
 }
 
 /* CSS billetterie */
-#billetterie {
-  background-image: url("../img_site/fond_noir_billet.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 0;
-  color: white;
-  box-sizing: border-box;
-  margin: auto;
-  position: relative;
-}
 
 #billetterie .card {
   width: 100%;
@@ -146,6 +137,7 @@ body {
   color: white;
   margin-bottom: 1rem;
   font-family: "Acme", sans-serif;
+  position: relative;
 }
 
 .title-img {
@@ -164,4 +156,37 @@ h1 {
   color: white;
   text-shadow: 1px 1px 0 black, 1px 1px 0 black, 1px 1px 0 black,
     1px 1px 0 black;
+}
+
+.cta-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.cta-image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.cta-button {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 50px;
+  padding: 0 20px;
+  background-color: #ffc107;
+  color: black;
+  border: 2px solid black;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  width: auto;
 }

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(/font/font/Permanent_Marker/PermanentMarker-Regular.ttf)
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.artistes-section p {
+  font-family: "Permanent Marker", cursive;
+  color: #ffffff;
+  margin: 0;
+  font-size: 48px;
+}
+
+/* Fond translucide sous les noms pour lisibilité */
+.noms-artistes-bg {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+/* Responsive font size */
+.noms-artistes p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .noms-artistes p {
+    font-size: 1.8rem;
+  }
+}
+.img-rappeur {
+  margin-bottom: -20px; /* Colle l’image au footer */
+}
